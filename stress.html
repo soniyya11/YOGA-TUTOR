@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="example.css">
+         <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Lato" sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height:1.7;
+    padding: 20px;
+}
+.header
+{
+    height: 95vh;
+   /* background-image:linear-gradient(to right bottom,rgb(54, 30, 42), rgb(91, 11, 48)),url('D:/Downloads/advanced-css-course-master (2)/advanced-css-course-master/Natours/starter/img/hero.jpg') ;*/
+    background-size: cover;
+    background-position:top;
+    clip-path:polygon(0 0,100% 0,100% 75vh,0 100%);
+
+      
+}
+.header__logo-box{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height: 15px;
+}
+.header__logo-box:hover{
+    animation: animationrighttoleft 1s ease-in ;
+
+}
+/*.header__logo
+{   height: 15px;
+
+}
+
+.header__logo{
+        
+}
+*/
+.header__box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    } 
+.heading{
+color:black;
+text-transform: uppercase;
+backface-visibility: hidden;
+margin-bottom: 50px;
+    
+}
+.heading--main{
+    letter-spacing: 40px;
+    font-weight: 400;
+    font-size: 60px;
+    animation-name: animationlefttoright;
+    animation-duration: 1s;
+    /*animation-iteration-count: 3;
+    animation-delay:3s;
+    */
+    animation-timing-function: ease-in;
+    }
+    .heading--sub
+    {
+       
+    letter-spacing: 17.5px;
+    font-weight: 700;
+    font-size: 20px;
+    animation: animationrighttoleft 1s ease-in ;
+    /*animation-name: animationrighttoleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;*/
+    }
+@keyframes animationlefttoright {
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+   /* 50%
+    {
+        transform: rotate(180deg);
+    }*/
+    80%
+    {
+        transform: translateX(50px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    
+}
+@keyframes animationrighttoleft{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%
+    {
+        transform: translateX(-50px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes animationbottom{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.btn:link,
+    .btn:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding:15px 40px;
+        display: inline-block;
+        border-radius: 30px;
+        transition: all.2s;
+        position: relative;
+    }
+    .btn:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+    }
+    .btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    }
+    .btn--white
+    {
+        background-color: rgb(236, 187, 208);
+        color: rgb(14, 13, 13);
+        &::after{
+            background-color: #fff;
+        }
+    }
+    .btn::after{
+        content: "";
+        border-radius: 30px;
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        position:absolute ;
+        z-index: -1;
+        transition: all.4s;
+    }
+    .btn:hover::after{
+        transform: scaleX(1.2) scaleY(1.3);
+        opacity: 0;
+    }
+    .btn--animation{
+        animation: animationbottom .75s ease-in ;
+        animation-fill-mode: backwards;
+    }
+        </style>
+        <title>YOGA POSTURES</title>
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="header__box">
+            <h1 class="heading">
+                <div class="heading--main">STRESS RELIEF</div>
+                <div class="heading--sub">FOLLOW the below Asanas </div>
+            </h1>
+      <a href="garu.html" class="btn btn--white btn--animation"> Garudasana</a> &nbsp; &nbsp;
+      <a href="SAVASANA.html" class="btn btn--white btn--animation">Savasana</a> &nbsp; &nbsp;
+      <a href="Sukha.html" class="btn btn--white btn--animation"> Sukhasana </a> </br></br>
+      <a href="utta.html" class="btn btn--white btn--animation"> Uttanasana</a> &nbsp; &nbsp;
+      <a href="balasana.html" class="btn btn--white btn--animation">Balasana</a> &nbsp; &nbsp;
+      <a href="marj.html" class="btn btn--white btn--animation"> Marjaryasana</a> 
+        </div>
+        </header>
+    </body>
+</html>

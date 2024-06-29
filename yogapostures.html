@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yoga tutor </title>
+    <style>
+     .head{
+        height:150px;
+        width:100%;
+        background-color:#dfb2f4;
+       }
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin-top:20px;
+            margin-left: 20px;
+            overflow: hidden;
+            perspective: 1000px;
+            background-color:#dfb2f4;
+            padding-left:75px;
+            padding-top:80px;
+
+        }
+
+        .image {
+            width: 250px;
+            height: 230px;
+            transition: transform 0.4s, box-shadow 0.4s;
+            transform-origin: center center;
+        }
+
+        .image:hover {
+            transform: scale(1.2);
+            box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+        }
+
+        .image img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius:40px;
+        }
+
+        .image-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px 20px;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .image-container:hover .image-caption {
+            opacity: 1;
+        }
+        #image{
+          margin-left:10%;
+        }
+     
+    </style>
+</head>
+
+<body>
+<div class="head">
+    <center><h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 50px;">UNLOCKING WELLNESS THROUGH YOGA</h1></center>
+    
+    <p style="color: beige; font-size: 25px; font-family: Arial, Helvetica, sans-serif;"> YOGA is a holistic practice that offers numerous benefits for both physical and mental well-being. </p></div>
+    <b><p style="color: rgb(0, 12, 52); font-size: 30px;"> In our fast-paced lives, we often encounter daily challenges such as backpain , stress, sleep disturbances and many more. The ancient practice of yoga provides a simple yet powerful solution to address these issues and enhance our overall quality of life.</p></b>
+    <div class="image-container" id="image">
+        <div class="image">
+            <a href="asthma.html">
+            <img src="asth.jpeg">
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="image">
+            <a href="sleep.html" >
+            <img src="sleep.jpeg">
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="image">
+            <a href="back.html" >
+            <img src="Backpain.jpeg">
+        </div>
+    </div>
+    
+    </div>
+
+    <div class="image-container" id="image">
+        <div class="image">
+            <a href="stress.html" >
+            <img src="stress.jpeg">
+        </div>
+    </div>
+    <div class="image-container">
+        <div class="image">
+            <a href="weightgain.html">
+            <img src="weightgain.jpeg">
+        </div>
+    </div>
+    <div class="image-container">
+        <div class="image">
+            <a href="lazy.html" >
+            <img src="lazy.jpeg">
+        </div>
+    </div>
+    <div class="image-container" id="image">
+        <div class="image">
+            <a href="Weightloss.html" >
+            <img src="weightloss.jpeg">
+        </div>
+    </div> 
+    <div class="image-container">
+        <div class="image">
+            <a href="belly.html">
+            <img src="belly.jpeg">
+        </div>
+    </div> 
+</body>
+</html>
